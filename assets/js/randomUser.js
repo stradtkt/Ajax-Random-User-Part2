@@ -32,40 +32,52 @@ $(function() {
 
   function changeContent() {
   $('.far.fa-user').hover(function() {
-    $(this).css('color', 'dodgerblue');
+    $(this).css('color', 'white');
+    $(this).css('background', 'dodgerblue');
     $(this).css('transition', '0.3s ease-in-out');
   }, function() {
     $(this).css('color', '#000');
+    $(this).css('background', 'white');
   });
   $('.far.fa-envelope').hover(function() {
-    $(this).css('color', 'limegreen');
+    $(this).css('color', 'white');
+    $(this).css('background', 'limegreen');
     $(this).css('transition', '0.3s ease-in-out');
   }, function() {
     $(this).css('color', '#000');
+    $(this).css('background', 'white');
   });
   $('.far.fa-calendar-alt').hover(function() {
-    $(this).css('color', 'purple');
+    $(this).css('color', 'white');
+    $(this).css('background', 'purple');
     $(this).css('transition', '0.3s ease-in-out');
   }, function() {
     $(this).css('color', '#000');
+    $(this).css('background', 'white');
   });
   $('.far.fa-map').hover(function() {
-    $(this).css('color', 'red');
+    $(this).css('color', 'white');
+    $(this).css('background', 'red');
     $(this).css('transition', '0.3s ease-in-out');
   }, function() {
     $(this).css('color', '#000');
+    $(this).css('background', 'white');
   });
   $('.far.fa-lock').hover(function() {
-    $(this).css('color', 'gold');
+    $(this).css('color', 'white');
+    $(this).css('background', 'gold');
     $(this).css('transition', '0.3s ease-in-out');
   }, function() {
     $(this).css('color', '#000');
+    $(this).css('background', 'white');
   });
   $('.far.fa-phone').hover(function() {
-    $(this).css('color', 'darkorange');
+    $(this).css('color', 'white');
+    $(this).css('background', 'darkorange');
     $(this).css('transition', '0.3s ease-in-out');
   }, function() {
     $(this).css('color', '#000');
+    $(this).css('background', 'white');
   });
 }
 

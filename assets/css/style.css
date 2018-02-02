@@ -38,36 +38,19 @@ tr#randomItem {
   padding-top: 10px;
 }
 
-i.far.fa-user {
-  position: relative;
-  left: 26%;
-}
-i.far.fa-envelope {
-  position: relative;
-  left: 29%;
-}
-i.far.fa-map {
-  position: relative;
-  left: 35%;
-}
-i.far.fa-phone {
-  position: relative;
-  left: 45%;
-}
-i.far.fa-lock {
-  position: relative;
-  left: 30%;
-}
-i.far.fa-calendar-alt {
-  position: relative;
-  left: 33%;
-}
+
 i.far.fa-user,
 i.far.fa-lock,
 i.far.fa-calendar-alt,
 i.far.fa-phone,
 i.far.fa-map,
 i.far.fa-envelope {
-  top: 90px;
+	position: relative;
+  top: 100px;
+	left: 20px;
   font-size: 30px;
+	padding: 1% 4%;
+	border-radius: 10px;
+	background: white;
+	border-color: rgba(100,100,100,0.3);
 }
