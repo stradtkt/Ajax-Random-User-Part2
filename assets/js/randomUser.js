@@ -10,9 +10,9 @@ $(function() {
       $.each(data.results, function(i, profile) {
         peopleHTML = '<td class="employee-profile">';
         peopleHTML += '<img class="user-image" src="'+profile.picture.large+'">';
-        peopleHTML += '<p id="selection"></p>';
+        peopleHTML += '<div class="selection"></div>';
         peopleHTML += '<i class="far fa-user"></i>';
-        peopleHTML += '<p class="hidden">Hi, my name is, <br/>'+profile.name.first+' '+profile.name.last'</p>';
+        peopleHTML += '<p class="hidden name">Hi, my name is, <br/>'+profile.name.first+' '+profile.name.last+'</p>';
         peopleHTML += '<i class="far fa-envelope"></i>';
         peopleHTML += '<p class="hidden">My email is, <br/>'+profile.email+'</p>';
         peopleHTML += '<i class="far fa-calendar-alt"></i>';
@@ -24,9 +24,51 @@ $(function() {
         peopleHTML += '<p class="hidden">My Phone Number is, <br/>'+profile.phone+'</p>';
         peopleHTML += '<i class="far fa-lock"></i>';
         peopleHTML += '<p class="hidden">My username is,'+profile.login.username+'<br/> My password is, '+profile.login.password+'</p>';
+        changeContent();
         $('#randomItem').append(peopleHTML);
       });
     }
   });
+
+  function changeContent() {
+  $('.far.fa-user').hover(function() {
+    $(this).css('color', 'dodgerblue');
+    $(this).css('transition', '0.3s ease-in-out');
+  }, function() {
+    $(this).css('color', '#000');
+  });
+  $('.far.fa-envelope').hover(function() {
+    $(this).css('color', 'limegreen');
+    $(this).css('transition', '0.3s ease-in-out');
+  }, function() {
+    $(this).css('color', '#000');
+  });
+  $('.far.fa-calendar-alt').hover(function() {
+    $(this).css('color', 'purple');
+    $(this).css('transition', '0.3s ease-in-out');
+  }, function() {
+    $(this).css('color', '#000');
+  });
+  $('.far.fa-map').hover(function() {
+    $(this).css('color', 'red');
+    $(this).css('transition', '0.3s ease-in-out');
+  }, function() {
+    $(this).css('color', '#000');
+  });
+  $('.far.fa-lock').hover(function() {
+    $(this).css('color', 'gold');
+    $(this).css('transition', '0.3s ease-in-out');
+  }, function() {
+    $(this).css('color', '#000');
+  });
+  $('.far.fa-phone').hover(function() {
+    $(this).css('color', 'darkorange');
+    $(this).css('transition', '0.3s ease-in-out');
+  }, function() {
+    $(this).css('color', '#000');
+  });
+}
+
+
 
 });
